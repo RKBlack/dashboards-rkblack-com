@@ -16,12 +16,6 @@
             iframe.src = urls[currentIndex];
 
             currentIndex = (currentIndex + 1) % urls.length;
-
-            if (currentIndex === 0) {
-                setTimeout(function () {
-                    iframe.src = urls[currentIndex];
-                }, 1000);
-            }
         }
 
         setInterval(rotateIframe, 45000);
